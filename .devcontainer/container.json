@@ -1,0 +1,43 @@
+{
+
+  "name": "C/C++ DevContainer",
+
+  "dockerFile": "../Dockerfile", // Adjust the path to your Dockerfile
+
+  "customizations":{
+
+    "vscode": {
+
+      "extensions": [
+
+        "ms-vscode.cpptools", // C/C++ extension for VSCode
+
+        "ms-toolsai.jupyter",
+
+        "ms-python.python",
+
+        "cschlosser.doxdocgen",
+
+        "jbenden.c-cpp-flylint",
+
+        "ms-vscode.makefile-tools"
+
+      ],
+
+      "settings": {
+
+        "terminal.integrated.shell.linux": "/bin/bash",
+
+        "notebook.file.autoSave": "afterDelay",
+
+        "notebook.file.autoSaveDelay": 1000
+
+
+
+      }
+
+    }
+
+  }
+
+}
