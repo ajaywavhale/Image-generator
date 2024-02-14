@@ -21,16 +21,17 @@ RUN apt-get update &&  \
     vagrant 
 
 
-
+RUN apt-get update 
+RUN apt-get install ffmpeg libsm6 libxext6 -y
 
 
 # Install required dependencies
 
-#RUN apt-get update && \
+RUN apt-get update && \
 
-#    apt-get install -y python3 python3-pip \
+    apt-get install -y python3 python3-pip \
 
-#    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*
 
 
 
