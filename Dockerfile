@@ -33,6 +33,7 @@ RUN apt-get update && \
 
     && rm -rf /var/lib/apt/lists/*
 
+RUN pip install modelhub-ai
 
 
 # Install arm-none-eabi compiler
